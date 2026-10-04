@@ -1,0 +1,124 @@
+/* General Layout */
+.ContactContainer {
+   background-image: url("../Image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+.ContactContentWrapper {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.ContactHeader {
+  text-align: center;
+  color: #1b5e20;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.ContactSubtext {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout for Form & Map */
+.ContactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Form Styling */
+.ContactFormCard {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.ContactFormCard h3 {
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.FormWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.InputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InputGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.InputGroup input, .InputGroup textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+.InputGroup input:focus {
+  border-color: #4caf50;
+}
+
+.SubmitBtn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.SubmitBtn:hover {
+  background: #388e3c;
+}
+
+/* Map Styling */
+.MapCard {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.MapContainer {
+  flex: 1;
+  min-height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px 0;
+  border: 1px solid #eee;
+}
+
+.ContactInfoText {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .ContactGrid {
+    grid-template-columns: 1fr;
+  }
+}

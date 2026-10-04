@@ -1,0 +1,141 @@
+/* Background */
+.organic-container {
+  background-image: url("../Image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Overlay */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.LogoBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.LogoImg {
+  height: 40px;
+}
+
+.LogoText {
+  color: #2e7d32;
+  font-size: 22px;
+}
+
+ .NavLinks {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  
+}
+
+.NavLinkItem {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+  
+}
+
+.NavLinkItem:hover {
+  color: #4caf50;
+}
+
+.ContactBtn {
+  background: #4caf50;
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 20px;
+  
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 0 50px;
+}
+
+/* Left Text */
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 55px;
+  line-height: 1.2;
+  margin-right: 0px;
+  margin-top: -50px;
+  margin-left: 100px;
+}
+
+.hero-text .organic {
+  color: #39ff14;
+}
+
+.hero-text p {
+  margin: 15px 0;
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+/* Button */
+.hero-text button {
+  padding: 8px 18px;        
+  font-size: 13px;
+  border: none;
+  background-color: #39ff14;
+  color: black;
+  border-radius: 20px;    
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 220px;
+
+  width: auto;              
+  display: inline-block;    
+  font-weight: bold;
+}
+
+/* Right Image */
+.hero-image img {
+  width: 400px;
+  height: 300px;
+  padding-top: -30px;
+  margin-top: -70px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

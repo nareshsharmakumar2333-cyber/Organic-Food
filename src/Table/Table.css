@@ -1,0 +1,74 @@
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #39ff14;
+}
+
+
+
+.container {
+  width: 90%;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Title */
+.title h1 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Table header */
+thead {
+  background-color: #3498db;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+  background-color: #f2f2f2;
+  transition: 0.3s;
+}
+
+/* Image styling */
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #3498db;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}

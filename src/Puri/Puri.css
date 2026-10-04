@@ -1,0 +1,144 @@
+/* RESET (important) */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BACKGROUND ===== */
+.puri-container {
+  background-image: url("../Image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* ===== OVERLAY ===== */
+.overlay {
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,128,0,0.6));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* ===== NAVBAR ===== */
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #39ff14;
+}
+
+/* LOGO */
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-box img {
+  width: 50px;
+}
+
+.logo-box h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+}
+
+/* ===== LEFT CONTENT ===== */
+.left-content {
+  width: 50%;
+}
+
+.left-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+
+.left-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* TEXT COLOR */
+.highlight {
+  color: #aaffaa;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #39ff14;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2ecc71;
+}
+
+/* ===== RIGHT IMAGE ===== */
+.Dj-image {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.Dj-image img {
+  width: 100%;
+  max-width: 650px;
+  height: 500px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255,255,255,0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  .Dj-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .Dj-image img {
+    max-width: 250px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+}

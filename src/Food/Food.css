@@ -1,0 +1,138 @@
+
+
+
+/* General Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.OrganicContainer {
+  background-image: url("../Image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
+}
+
+/* Navbar Styling */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: #f5f8f5;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.LogoBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.LogoImg {
+  height: 40px;
+}
+
+.LogoText {
+  color: #2e7d32;
+  font-size: 22px;
+}
+
+.NavLinks {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.NavLinkItem {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.NavLinkItem:hover {
+  color: #4caf50;
+}
+
+.ContactBtn {
+  background: #4caf50;
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+/* Food List Styling */
+.FoodListWrapper {
+  max-width: 850px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.FoodListHeader {
+  color: #1b5e20;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.FoodItemList {
+  list-style: none;
+}
+
+.FoodItemRow {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.FoodItemRow:hover {
+  background-color: #f9fff9;
+  transform: scale(1.01);
+}
+
+.FoodItemImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 25px;
+  background: #eee;
+}
+
+.FoodItemDetails {
+  flex: 1;
+}
+
+.FoodItemID {
+  font-size: 11px;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.FoodItemName {
+  color: #333;
+  margin: 5px 0;
+}
+
+.FoodItemDescription {
+  color: #777;
+  font-size: 14px;
+}
+
+.FoodItemPriceTag {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2e7d32;
+  background: #e8f5e9;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
